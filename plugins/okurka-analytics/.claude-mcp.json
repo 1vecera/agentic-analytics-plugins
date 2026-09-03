@@ -2,7 +2,7 @@
   "mcpServers": {
     "okurka": {
       "type": "http",
-      "url": "https://agenticanalytics.cz/mcp/okurka-metricflow"
+      "url": "https://mcp.agenticanalytics.cz/mcp/okurka-metricflow"
     }
   }
 }

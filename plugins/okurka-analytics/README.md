@@ -1,6 +1,6 @@
 # Okurka Analytics
 
-Okurka Analytics is a self-contained, read-only plugin for governed questions about the fictional Okurka Market. It connects directly to the deployed dbt Semantic Layer/MetricFlow MCP server at `https://agenticanalytics.cz/mcp/okurka-metricflow`; it needs no repository checkout, Python environment, AWS permission, tunnel, private skills tree, or machine-specific path. Claude Code requires `node` on `PATH` for the bundled main-session MCP guard.
+Okurka Analytics is a self-contained, read-only plugin for governed questions about the fictional Okurka Market. It connects directly to the deployed dbt Semantic Layer/MetricFlow MCP server at `https://mcp.agenticanalytics.cz/mcp/okurka-metricflow`; it needs no repository checkout, Python environment, AWS permission, tunnel, private skills tree, or machine-specific path. Claude Code requires `node` on `PATH` for the bundled main-session MCP guard.
 
 Response speed is the highest product priority. The main session only plans, delegates, propagates failures, and assembles. Each executor uses one compact family discovery call and one batched query for a normal question. The server validates immutable artifacts once at startup and safely reuses content-addressed results without changing the returned MetricFlow SQL, rows, provenance, cutoff, or non-release boundary.
 
@@ -46,7 +46,7 @@ ChatGPT desktop and Codex share the `.codex-plugin` package and can install it f
 Any standards-compliant client that supports Streamable HTTP and OAuth can connect to:
 
 ```text
-https://agenticanalytics.cz/mcp/okurka-metricflow
+https://mcp.agenticanalytics.cz/mcp/okurka-metricflow
 ```
 
 The endpoint implements MCP over one HTTP path. Anonymous clients receive the Cloudflare Access authorization challenge; authenticated requests reach the AWS-hosted FastAPI/MetricFlow runtime. The analytical data is deterministic, synthetic, not accepted for release, and always reports `release_authority=false`.
