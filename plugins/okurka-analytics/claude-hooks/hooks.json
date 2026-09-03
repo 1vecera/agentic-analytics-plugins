@@ -1,0 +1,17 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "^mcp__.*okurka.*__(discover_metrics|list_metrics|query_metrics)$",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/claude-hooks/require-okurka-executor.mjs\"",
+            "timeout": 5,
+            "statusMessage": "Enforcing delegated Okurka execution"
+          }
+        ]
+      }
+    ]
+  }
+}

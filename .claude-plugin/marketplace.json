@@ -1,0 +1,25 @@
+{
+  "name": "agentic-analytics",
+  "owner": {
+    "name": "Daniel Vecera"
+  },
+  "description": "Installable agent interfaces for the client-owned agentic analytics delivery reference.",
+  "plugins": [
+    {
+      "name": "okurka-analytics",
+      "displayName": "Okurka Analytics",
+      "source": "./plugins/okurka-analytics",
+      "description": "Answer governed analytical questions about the fictional Okurka Market from its live dbt Semantic Layer runtime.",
+      "version": "1.1.0",
+      "author": {
+        "name": "Daniel Vecera"
+      },
+      "category": "data-and-analytics",
+      "tags": [
+        "analytics",
+        "dbt",
+        "metricflow"
+      ]
+    }
+  ]
+}

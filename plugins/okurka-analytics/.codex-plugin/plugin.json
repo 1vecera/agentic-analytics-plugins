@@ -1,0 +1,35 @@
+{
+  "name": "okurka-analytics",
+  "version": "1.1.0",
+  "description": "Answer governed analytical questions about the fictional Okurka Market from its live dbt Semantic Layer runtime.",
+  "author": {
+    "name": "Daniel Vecera",
+    "url": "https://github.com/1vecera"
+  },
+  "homepage": "https://agenticanalytics.cz/install",
+  "repository": "https://github.com/1vecera/agentic-analytics-plugins",
+  "keywords": [
+    "analytics",
+    "dbt",
+    "metricflow",
+    "okurka"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Okurka Analytics",
+    "shortDescription": "Governed Okurka analytics",
+    "longDescription": "Orchestrates delegated, response-speed-first analysis against the Access-protected Okurka dbt Semantic Layer without performing domain execution in the main session.",
+    "developerName": "Daniel Vecera",
+    "category": "Data & Analytics",
+    "websiteURL": "https://agenticanalytics.cz/install",
+    "capabilities": [
+      "Read"
+    ],
+    "defaultPrompt": [
+      "How are net revenue and EBITDA performing versus plan?",
+      "Which product categories lead on revenue and margin?",
+      "How strong are mature acquisition cohorts?"
+    ]
+  },
+  "mcpServers": "./.mcp.json"
+}
