@@ -9,8 +9,8 @@
       "name": "okurka-analytics",
       "displayName": "Okurka Analytics",
       "source": "./plugins/okurka-analytics",
-      "description": "Answer governed analytical questions about the fictional Okurka Market from its live dbt Semantic Layer runtime.",
-      "version": "1.1.0",
+      "description": "Answer governed questions about the Okurka Market demo from its live dbt Semantic Layer runtime.",
+      "version": "1.2.0",
       "author": {
         "name": "Daniel Vecera"
       },

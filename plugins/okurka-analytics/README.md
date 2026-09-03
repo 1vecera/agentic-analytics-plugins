@@ -1,6 +1,6 @@
 # Okurka Analytics
 
-Okurka Analytics is a self-contained, read-only plugin for governed questions about the fictional Okurka Market. It connects directly to the deployed dbt Semantic Layer/MetricFlow MCP server at `https://mcp.agenticanalytics.cz/mcp/okurka-metricflow`; it needs no repository checkout, Python environment, AWS permission, tunnel, private skills tree, or machine-specific path. Claude Code requires `node` on `PATH` for the bundled main-session MCP guard.
+Okurka Analytics is a self-contained, read-only plugin for governed questions about the fictional Okurka Market business and its consent-covered real product catalog. It connects directly to the deployed dbt Semantic Layer/MetricFlow MCP server at `https://mcp.agenticanalytics.cz/mcp/okurka-metricflow`; it needs no repository checkout, Python environment, AWS permission, tunnel, private skills tree, or machine-specific path. Claude Code requires `node` on `PATH` for the bundled main-session MCP guard.
 
 Response speed is the highest product priority. The main session only plans, delegates, propagates failures, and assembles. Each executor uses one compact family discovery call and one batched query for a normal question. The server validates immutable artifacts once at startup and safely reuses content-addressed results without changing the returned MetricFlow SQL, rows, provenance, cutoff, or non-release boundary.
 
@@ -39,7 +39,7 @@ The remote HTTP MCP connection is declared in `.claude-mcp.json`; Claude Code ow
 
 ## ChatGPT
 
-ChatGPT desktop and Codex share the `.codex-plugin` package and can install it from a local or repository marketplace. Native ChatGPT MCP wiring additionally requires registering the remote endpoint in ChatGPT developer mode. Record the real `plugin_asdk_app…` technical ID from the registration URL, pass that exact ID to the official `$plugin-creator` workflow, review the generated `.app.json`, and reference that file from the manifest's `apps` field. Never invent, truncate, or manually transform the registered identifier. Until the real generated wiring exists, this source is not a complete usable ChatGPT plugin and a direct endpoint connection is only an MCP integration. ChatGPT Work supports the skill's subagent workflow on eligible accounts; if subagents are unavailable, the skill fails instead of executing analytics in the main session.
+ChatGPT and Codex share the `.codex-plugin` package. Its `.app.json` contains the exact registered ChatGPT Apps SDK identifier, while `.mcp.json` retains the direct remote MCP declaration for compatible Codex clients. Install the package from the marketplace, connect Okurka Analytics, and complete the Cloudflare email challenge on first use. ChatGPT Work supports the skill's subagent workflow on eligible accounts; if subagents are unavailable, the skill fails instead of executing analytics in the main session.
 
 ## Direct MCP
 
