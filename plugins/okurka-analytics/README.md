@@ -24,7 +24,7 @@ The friend-facing walkthrough is at [agenticanalytics.cz/install](https://agenti
 Claude Code supports the same package natively through `.claude-plugin/plugin.json`:
 
 ```sh
-claude plugin marketplace add 1vecera/agentic-analytics-plugins
+claude plugin marketplace add https://github.com/1vecera/agentic-analytics-plugins.git
 claude plugin install okurka-analytics@agentic-analytics
 ```
 

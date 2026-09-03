@@ -18,7 +18,7 @@ codex plugin add okurka-analytics@agentic-analytics
 ### Claude Code
 
 ```sh
-claude plugin marketplace add 1vecera/agentic-analytics-plugins
+claude plugin marketplace add https://github.com/1vecera/agentic-analytics-plugins.git
 claude plugin install okurka-analytics@agentic-analytics
 ```
 
